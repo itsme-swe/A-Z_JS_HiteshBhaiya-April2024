@@ -39,3 +39,51 @@
 **2. An array -**
 
 **3. A date -**
+
+# Conversion Operations
+Data conversion operations allow you to convert values from one data type to another. There are two types of data conversions: **implicit and explicit**.
+
+**1. Implicit Coversion -**  Implicit conversion, also known as type coercion, occurs automatically when values of different types are used together in an expression. 
+
+    let score = 33
+    let str = "10"
+
+    let result = score + str    // Implicit conversion of num to string
+
+    console.log(result);    // Output - "3310" string
+
+**2. Explicit Conversion -** Explicit conversion involves using built-in functions or operators to explicitly convert values from one type to another. This allows for more control over the conversion process and can help avoid unexpected behavior.
+
+Some common methods of explicit conversion include:
+
+**🔸parseInt( ) and parseFloat( ) -** Convert strings to integers or floating-point numbers, respectively.
+
+    let str = "10";
+    
+    let num = parseInt(str);
+    
+    console.log(num); // Output: 10
+
+**🔸Number( ) -** Converts a value to a number.
+
+    let str = "10";
+
+    let num = Number(str);
+
+    console.log(num); // Output: 10
+
+**🔸Boolean( ) -** Converts a value to a boolean.
+
+    let value = 0;
+    
+    let bool = Boolean(value);
+    
+    console.log(bool); // Output: false
+
+**🔸toString( ) -** Converts a number to a string.
+
+    let num = 10;
+    
+    let str = num.toString();
+    
+    console.log(str); // Output: "10"
