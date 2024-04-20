@@ -16,21 +16,21 @@
 # Data Types 
 **🔶 Primitive DataTypes**
 
-**1. Number -**
+**1. Number -** Represents numeric values. It includes integers, floating-point numbers, and special numeric values like Infinity, -Infinity, and NaN (Not-a-Number).
 
-**2. String -**
+**2. String -** Represents textual data enclosed within single (''), double ("") or backtick (``) quotes. Strings are immutable in JavaScript.
 
 **3. Bigint -**
 
-**4. Boolean -**
+**4. Boolean -**  Represents a logical value indicating true or false.
 
-**5. Undefind -**
+**5. Undefind -** Represents a variable that has been declared but not assigned a value. It also represents the value returned by functions with no return value.
 
-**6. Null -**
+**6. Null -** Represents an intentional absence of any value. It is a special value that signifies 'nothing' or 'empty'.
 
-**7. Symbol -** Used for uniqueness
+**7. Symbol -** Represents a unique identifier. Symbols are used to create unique property keys in objects.
 
-**8. Object -**
+**8. Object -** Represents a collection of key-value pairs where values can be of any data type (including other objects).
 
 **🔶 Object DataTypes**
 
