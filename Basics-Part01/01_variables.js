@@ -8,4 +8,6 @@ var accountPass = "12345"
 
 accountCity = "Jaipur"
 
-console.table([accoutId, accountEmail, accountPass, accountCity])
+let accountState;   //-- variable declared without initilisation will return undefined
+
+console.table([accoutId, accountEmail, accountPass, accountCity, accountState])
