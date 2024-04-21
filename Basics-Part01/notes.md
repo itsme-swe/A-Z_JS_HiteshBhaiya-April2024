@@ -87,3 +87,63 @@ Some common methods of explicit conversion include:
     let str = num.toString();
     
     console.log(str); // Output: "10"
+
+# Strings
+The String object is used to represent and manipulate a sequence of characters and to store text. Normally, JavaScript strings are primitive values, created from literals. But strings can also be defined as objects with the keyword new:
+
+    let text = "Hello Hitesh Sir";                  // Primitive type
+
+    let newText = new String("I am Harsh Mehra")    // Object type
+
+**🟡 Template String -** Templates were introduced with ES6 (JavaScript 2016). Templates are strings enclosed in backticks(``). Templates allow multiline strings:
+
+    let text = `I am glad
+                that I can 
+                learn coding
+                fro you `;
+
+**🟡 String Interpolation -** String interpolation allows you to embed expressions within string literals. We can use string interpolation in JavaScript with **Template Literals**, **Object properties** and with **Functions**.
+
+    const name = "harsh"
+    const age = 31
+    console.log(`My name is ${name} and I am ${age} years old.`)
+
+# JS String Methods  
+**1. charAt( )** method returns the character at a specified index (position) in a string.
+
+    let text = "Hello World"
+    
+    let letter = text.charAt(1)
+    
+    console.log(letter)     // Output : e
+
+**2. charCodeAt( )** method returns the Unicode of the character at a specified index (position) in a string.
+
+    let text = "Hello World"
+    
+    let letter = text.charCodeAt(1)
+    
+    console.log(letter)     // Output : 101
+
+**3. concat( )** method joins two or more strings. It does not change the existing strings and  returns a new string.
+
+    let text1 = "Hello"
+    let text2 = "World"
+    let text3 = "Have a nice day"
+
+    let result = text1.concat(" ", text2," ", text3)    // " " stands for empty spaces
+    console.log(result);
+
+**4. endsWith( )** method returns **true** if a string ends with a specified string. Otherwise it returns **false** and it is case sensitive method.
+
+    let newTxt = "Hello Sir"
+    
+    let output = newTxt.endsWith("Sir")
+    
+    console.log(output);        // true
+
+**5. String.fromCharCode( )** method converts Unicode values to characters.
+
+    let name = String.fromCharCode(72, 97, 114, 115, 104)
+    
+    console.log(name);      // output: Harsh

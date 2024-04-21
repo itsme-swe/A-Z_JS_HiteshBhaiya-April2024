@@ -1,0 +1,31 @@
+// charAt() method
+let text = "Hello World"
+let letter = text.charAt(1)
+console.log(letter);
+
+
+// charCodeAt() method
+let txt = "Hello World"
+let ltr = text.charCodeAt(1)
+console.log(ltr);
+
+// concat() method
+
+let text1 = "Hello"
+let text2 = "World"
+let text3 = "Have a nice day"
+
+let result = text1.concat(" ", text2," ", text3)
+console.log(result);
+
+// endsWith() method
+let newTxt = "Hello Sir"
+let output = newTxt.endsWith("Sir")
+console.log(output);
+
+// Strings.fromCharCode() method
+let name = String.fromCharCode(72, 97, 114, 115, 104)
+console.log(name);
+
+
+
