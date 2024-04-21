@@ -27,5 +27,17 @@ console.log(output);
 let name = String.fromCharCode(72, 97, 114, 115, 104)
 console.log(name);
 
+// includes() method
+let role = "I am a software engineer"
+console.log(role.includes('software'));
+
+// indexOf() method
+let index = "This method will return index value of string"
+console.log(index.indexOf("return"));
+console.log(index.length);
+
+
+
+
 
 

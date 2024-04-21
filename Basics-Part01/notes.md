@@ -147,3 +147,22 @@ The String object is used to represent and manipulate a sequence of characters a
     let name = String.fromCharCode(72, 97, 114, 115, 104)
     
     console.log(name);      // output: Harsh
+
+**6. includes( )** method returns **true** if a string contains a specified string. Otherwise it returns **false**.
+
+
+    let role = "I am a software engineer"
+
+    console.log(role.includes('software'));     // Output: true
+
+**7. indexOf( )** method returns the position of the first occurrence of a value in a string and it returns -1 if the value is not found.
+
+    let index = "This method will return index value of string"
+    
+    console.log(index.indexOf("return"));   // output: 17
+
+**8. length** property returns the length of a string.
+
+    let index = "This method will return index value of string"
+    
+    console.log(index.legth);       // Output: 45
