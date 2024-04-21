@@ -172,3 +172,74 @@ The String object is used to represent and manipulate a sequence of characters a
     let indx = "This method will return index value of string"
     
     console.log(indx.match("lue"));
+
+**10. repeat( )** method returns a string with a number of copies of a string.
+
+    let copies = "I will buy Aston Martin"
+    
+    let numCopies = copies.repeat(3)
+    
+    console.log(numCopies);
+
+    // output - I will buy Aston MartinI will buy Aston MartinI will buy Aston Martin
+
+**11. replace( )** method searches a string for a value or a regular expression and returns a new string with the value(s) replaced.
+
+    let person = "Mr Blu has a blue house and a blue car "
+    
+    let newPerson = person.replace(/blue/g, "red")      // The g flag at the end (/blue/g) stands for "global", meaning it will replace all occurrences of the pattern in the string, not just the first one.
+    
+    console.log(newPerson);
+
+    // output: Mr Blu has a red house and a red car
+
+**12. slice( )** method extracts a part of a string and returns the extracted part in a new string. The start and end parameters specifies the part of the string to extract.
+
+    let emailID = "harsh@gmail.com"
+    
+    let finalOne = emailID.slice(0,5)       // .slice(start_index, end_index)
+    
+    console.log(finalOne);      //Output: harsh
+
+**13. split( )** method splits a string into an array of substrings and method returns the new array. If (" ") is used as separator, the string is split between words and it also convert string into object.
+
+    let greet = "How are you doing today?";
+    
+    const myArray = greet.split(' ')
+    
+    console.log(myArray);
+
+    //output: [ 'How', 'are', 'you', 'doing', 'today?' ]
+
+**14. substring( )** method extracts characters, between two indices (positions), from a string, and returns the substring and extracts characters from start to end (exclusive). 
+
+If start is greater than end, arguments are swapped: (4, 1) = (1, 4). Start or end values less than 0, are treated as 0.
+
+    let raceCar = "Aston Martin"
+    
+    let fCar = raceCar.substring(2)     .substring(start, end)
+    
+    console.log(fCar);      // Output: ton Martin
+
+**15. trim( )** method removes whitespace from both sides of a string.
+
+    let newCar = "    Hyundai Creta   "
+    
+    let car = newCar.trim()
+    
+    console.log(newCar);
+
+    console.log(car);
+
+
+**16. valueOf()** method returns the primitive value of a string and can be used to convert a string object into a string.
+
+    let str1 = new String("HelloWorld")
+    
+    let str2 = str1.valueOf()
+    
+    console.log(typeof(str1));      // object
+    
+    console.log(typeof(str2));      // string
+
+**🔶 Note: All string methods return a new value. They do not change the original variable.s**
