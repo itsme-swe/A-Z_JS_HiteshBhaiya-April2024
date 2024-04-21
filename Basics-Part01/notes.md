@@ -166,3 +166,9 @@ The String object is used to represent and manipulate a sequence of characters a
     let index = "This method will return index value of string"
     
     console.log(index.legth);       // Output: 45
+
+**9. match( )** method matches a string against a regular expression . **match( )** method returns an array with the matches and returns null if no match is found.
+
+    let indx = "This method will return index value of string"
+    
+    console.log(indx.match("lue"));

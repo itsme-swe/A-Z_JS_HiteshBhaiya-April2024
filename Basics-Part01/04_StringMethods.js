@@ -36,6 +36,10 @@ let index = "This method will return index value of string"
 console.log(index.indexOf("return"));
 console.log(index.length);
 
+// match() method
+let indx = "This method will return index value of string"
+console.log(indx.match("lue"));
+
 
 
 
