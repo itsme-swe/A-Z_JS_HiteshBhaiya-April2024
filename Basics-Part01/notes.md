@@ -243,3 +243,8 @@ If start is greater than end, arguments are swapped: (4, 1) = (1, 4). Start or e
     console.log(typeof(str2));      // string
 
 **🔶 Note: All string methods return a new value. They do not change the original variable.s**
+
+# JS Number Reference
+The Number constructor contains constants and methods for working with numbers. Values of other types can be converted to numbers using the Number() function.
+
+# Number Methods
