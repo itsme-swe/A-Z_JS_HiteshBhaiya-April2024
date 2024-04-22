@@ -14,5 +14,8 @@ console.log(typeof(num));
 let newVal = Number(num)        // So by using Number() method we can convert object to number 
 console.log(typeof newVal);
 
+console.log(Math.PI);
+
+
 
 

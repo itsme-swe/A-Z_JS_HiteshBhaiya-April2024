@@ -247,4 +247,67 @@ If start is greater than end, arguments are swapped: (4, 1) = (1, 4). Start or e
 # JS Number Reference
 The Number constructor contains constants and methods for working with numbers. Values of other types can be converted to numbers using the Number() function.
 
+    let age = new Number(31)        // object type
+
+    let num = Number(age)           // And, this will convert object to number
+
+    console.log(typeof(num))        // output: number
+
 # Number Methods
+**1. Number.EPSILON** returns the difference between the smallest floating point number greater than 1 and 1. EPSILON is a property of the JavaScript Number object.
+
+    let x = Number.EPSILON
+
+    console.log(x);     //output: 2.220446049250313e-16
+
+**2. Number.isInteger( )** method returns true if a value is an integer of the datatype Number. Otherwise it returns false.
+
+    let a = Number.isInteger(2.5)
+    
+    let b = Number.isInteger(2)
+    
+    console.log(a);     // output: false
+    
+    console.log(b);     // output: true
+
+**3. Number MAX_VALUE** Number.MAX_VALUE returns the largest number possible in JavaScript. It is a property of the JavaScript Number object. We can only use it as **Number.MAX_VALUE.**
+
+**4. Number.MIN_VALUE** returns the smallest number possible in JavaScript and the value it return is 5e-324.
+
+**5. toFixed( )** method converts a number to a string and rounds the string to a specified number of decimals.
+
+    let number = 25.6756
+    
+    let n = number.toFixed(2)
+    
+    console.log(n);             // Output: 25.68
+    
+    console.log(typeof(n));     // string
+
+**6. toLocaleString( )**  returns a number as a string, using local language format.
+
+    let pay = 12500000
+
+    let text = pay.toLocaleString("en-IN", {style:"currency", currency:"INR"})
+
+    console.log(text);          // Output: ₹1,25,00,000.00
+
+    console.log(typeof text);   // string
+
+**7. toPrecision( )** method formats a number to a specified length.
+
+    let amt = 25.234
+    
+    console.log(amt.toPrecision(3));    // output: 25.2
+
+# JS Math Object
+The JavaScript Math object allows us to perform mathematical tasks on numbers.
+
+    console.log(Math.PI);       // Returning the value of pie
+
+    // Output: 3.141592653589793
+
+Unlike other objects, the Math object has no constructor, it is Static. All methods and properties can be used without creating a Math object first.
+
+# Math Methods
+
