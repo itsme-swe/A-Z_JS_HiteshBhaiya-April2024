@@ -357,3 +357,37 @@ Unlike other objects, the Math object has no constructor, it is Static. All meth
     console.log(int);
 
     //output: 77
+
+# Dates in JS
+JavaScript Date object is used to represent a moment in time. This time value is since 1 January 1970 UTC (Coordinated Universal Time).
+
+Date objects are created with the new Date() constructor.
+
+There are few ways to create a new date object:
+
+**1. new Date( )** creates a date object with the current date and time:
+
+    let d = new Date()
+    
+    console.log(d);
+
+    // output: 2024-04-22T12:53:07.615Z
+
+**2. new Date(date string)** creates a date object from a date string.
+
+# Date Methods
+**1. getDate( )** The **getDate( )** method returns the day of the month (1 to 31) of a date.
+
+    let d = new Date()
+    
+    let day = d.getDate()
+    
+    console.log(day);       // output: 22
+
+**2. getDay( )** The **getDay( )** method returns the day of the week (0 to 6) of a date.
+
+    let d1 = new Date()
+    
+    let day1 = d1.getDay()
+    
+    console.log(day1);      // output: 1
