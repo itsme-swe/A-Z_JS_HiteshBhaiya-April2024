@@ -310,4 +310,50 @@ The JavaScript Math object allows us to perform mathematical tasks on numbers.
 Unlike other objects, the Math object has no constructor, it is Static. All methods and properties can be used without creating a Math object first.
 
 # Math Methods
+**1. abs( ) :** The **Math.abs( )** method returns the absolute value of a number.
 
+    let a = Math.abs(7.25)     // Output: 7.25
+    let b = Math.abs(-7.25)    // Output: 7.25
+    let c = Math.abs(null)     // Output: 0
+    let d = Math.abs('Hello')  // Output: NaN
+    let e = Math.abs(2-3)      // Output: 1
+
+    console.table([a,b,c,d,e])
+
+**2. ceil( ) :** The **Math.ceil( )** method rounds a number rounded UP to the nearest integer.
+
+    let x = Math.ceil(1.2)      //output: 2
+
+    let y = Math.ceil(-5.1)     //output: -5
+
+    console.log(x,y);
+
+**3. floor( ) :** The **Math.floor( )** method rounds a number DOWN to the nearest integer.
+
+    let ab = Math.floor(2.7)        // output: 2
+
+    let bc = Math.floor(-6.8)       //output: 7
+
+    console.log(ab,bc);
+
+**4. pow( ) :** The **Math.pow()** method returns the value of x to the power of y.
+
+    let power = Math.pow(2,3)
+    
+    console.log(power);
+
+    //output: 8
+
+**5. random( ) :** The **Math.random()** method returns a random floating point number between 0 (inclusive) and 1 (exclusive).
+
+**6. round( ) :** The **Math.round( )** method rounds a number to the nearest integer.
+    
+    2.49 will be rounded down (2), and 2.5 will be rounded up (3).
+
+**7. trunc( ) :** The **Math.trunc( )** method returns the integer part of a number and it removes the decimals (does NOT round the number).
+
+    let int = Math.trunc(77.890)
+    
+    console.log(int);
+
+    //output: 77
