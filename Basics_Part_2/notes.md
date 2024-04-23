@@ -175,3 +175,51 @@ And, we ca use **splice( )** method to remove elements from array by using cleve
     const numbersCombined = [...numbersOne, ...numbersTwo];
     
     console.log(numbersCombined);   // output: [ 1, 2, 3, 4, 5, 6 ]
+
+# JS Objects
+In JavaScript, almost "everything" is an object.
+
+🔸Booleans can be objects (if defined with the **new** keyword)
+
+🔸Numbers can be objects (if defined with the **new** keyword)
+
+🔸Strings can be objects (if defined with the **new** keyword)
+
+🔸Dates are always objects
+
+🔸Maths are always objects
+
+🔸Regular expressions are always objects
+
+🔸Arrays are always objects
+
+🔸Functions are always objects
+
+🔸Objects are always objects
+
+    const person = {
+
+        firstName: "Harsh",
+        lastName: "Mehra",
+        age: 31,
+        height: "5'6",
+        weight: 68.5
+
+    }
+
+    🔸Accessing objects in two ways: 
+
+    1. console.log(person.firstName)    By using object.propertyName
+
+    2. console.log(person["lastName"])  By using object[propertyName]
+
+
+➡️ Another method to create object is **Object.create( )**
+
+➡️  The **Object.freeze( )** method is used to freeze an object, making it immutable.
+
+    Object.freeze(person)
+
+    person.age = 29     // This change will not take effect
+
+    console.log(person)
