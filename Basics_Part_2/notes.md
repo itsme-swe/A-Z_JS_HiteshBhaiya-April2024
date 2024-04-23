@@ -239,3 +239,18 @@ In JavaScript, almost "everything" is an object.
     Methods like call(), apply(), and bind() can refer this to any object.
 
 ➡️ When we use **Object.keys(obj_name)** and **Object.values(obj_name)** to store the keys and values the return output data type will be **Array**. I means the object will be converted into Array type.
+
+➡️ **Object Destructuring** is the syntax for extracting values from an object property and assigning them to a variable. The destructuring is also possible for JavaScript Arrays.
+
+    # Basic Object Destructuring 
+
+    const user = {
+        name: "Alex",
+        address: "15th Park Avenue",
+        age: 31,
+        sills: ['JS', 'Devops', 'React']
+    }
+
+    const {name: nam} = user    // Here we can give aliases name to property by using ':'
+    
+    console.log(nam);   // output: Alex
