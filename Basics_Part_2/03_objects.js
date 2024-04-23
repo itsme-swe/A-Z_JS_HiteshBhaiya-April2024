@@ -5,7 +5,7 @@ const mySymbol = Symbol("Surya")     // Declaring Symbol
 let person = {
     firstName: "Harsh",
     lastName: "Mehra",
-    [mySymbol]: "SuryaVasham",      // Way to add Symbol data type inside object 
+    [mySymbol]: "SuryaVasham",      // Way to refer Symbol data type inside object 
     age: 31,
     email: "harsh@gmail.com",
     isLoggedIn: false,
@@ -21,6 +21,7 @@ person.email = "harsh@05gmail.com"
 console.log(person);
 
 // To lock the object, means no one can change the values of the object
+
 Object.freeze(person)
 
 // Now trying to change the value of Object person after freezing
