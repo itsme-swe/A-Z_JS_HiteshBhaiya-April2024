@@ -27,4 +27,15 @@ const ob3 = Object.assign({}, ob1, ob2)         // And, here we are using 'Objec
 console.log(ob3);
 // output: { name: 'Harsh', lname: 'Mehra', age: 31, email: 'harsh@gmail.com' }
 
+// Accessing Keys and Values of Objects 
+
+console.log(Object.keys(appUser));
+
+console.log();
+
+console.log(Object.values(appUser));
+
+
+
+
 
