@@ -227,13 +227,15 @@ In JavaScript, almost "everything" is an object.
 ➡️ **this keyword** keyword refers to an object. The **this** keyword refers to different objects depending on how it is used:
 
     In an object method, this refers to the object.
-    
+
     Alone, this refers to the global object.
-    
+
     In a function, this refers to the global object.
-    
+
     In a function, in strict mode, this is undefined.
-    
+
     In an event, this refers to the element that received the event.
-    
+
     Methods like call(), apply(), and bind() can refer this to any object.
+
+➡️ When we use **Object.keys(obj_name)** and **Object.values(obj_name)** to store the keys and values the return output data type will be **Array**. I means the object will be converted into Array type.
