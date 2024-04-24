@@ -7,4 +7,5 @@ const newNums = myNums.filter((num) => {
 
 console.log(newNums);
 
-// The main difference b/w "forEach loop" and "filter loop" is "filter loop" returns value and "for each loop" do not return value  
+// The main difference b/w "forEach loop" and "filter loop" is "filter loop" returns value and "for each loop" do not return value 
+
