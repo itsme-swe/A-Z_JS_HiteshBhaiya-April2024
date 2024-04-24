@@ -10,3 +10,6 @@ A JavaScript function is defined with the **function** keyword, followed by a na
     }
 
     console.log(add(5,5));  // Function arguments are the values received by the function when it is invoked.
+
+
+
