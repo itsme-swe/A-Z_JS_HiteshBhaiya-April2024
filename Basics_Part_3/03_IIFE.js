@@ -1,5 +1,6 @@
 //  Immediately Invoked Function Expression 
 
+// Named IIFE
 (function buyCar(carnam){
     console.log(`I own ${carnam}`);
     
