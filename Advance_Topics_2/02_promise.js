@@ -16,7 +16,7 @@ console.log();
 // Creatig new Promise
 new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = true            // This time now we'll be handling error
+        let error = false            // This time now we'll be handling error
 
         // Here if condition get's true the resolve statement will execute other wise the reject statement will execute
         if (!error){
@@ -25,7 +25,14 @@ new Promise(function(resolve, reject){
             reject('ERROR: Something went wrong')
         }
     }, 3000)
-}).then(function(user){
+})  // Now here are doing chaining
+.then(function(user){
     console.log(user);
-    
+    return `The car owned by owner is ${user.carName}`    
+})
+.then((carName) => {
+    console.log(carName);  
+})
+.catch(function(error){     // 'catch()' handles the error
+    console.log(error);   
 })
