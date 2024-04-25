@@ -8,3 +8,4 @@ A **Promise** is like a guarantee that something will happen in the future, and 
     🔸fulfilled: meaning that the operation was completed successfully.
     
     🔸rejected: meaning that the operation failed
+ 
