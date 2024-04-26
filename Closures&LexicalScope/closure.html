@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure and Lexical Scoping</title>
+</head>
+<body>
+    <h1>Closures</h1>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+
+<script>
+// Lexical Scoping
+// function outer (){
+//     let userName = 'Harsh'
+
+//     function inner() {
+//         console.log('Inner: ',userName); 
+//     }
+//     inner()
+// }
+// outer()
+// console.log('Too Outer: ',userName);
+
+/* ********************************************************/
+
+// Closures
+function makeFunc() {
+
+  const name = "Mozilla";
+
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+
+
+</script>
+
+<script>
+
+    function clickHandler(color){
+       
+        return () => {
+        document.body.style.backgroundColor = `${color}`
+       }
+       
+    }
+
+    document.getElementById('orange').onclick = clickHandler('orange')
+    document.getElementById('green').onclick = clickHandler('green')
+
+</script>
+
+</html>
+  
